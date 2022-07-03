@@ -3,25 +3,18 @@ import Header from '@/components/Header'
 const App = () => {
   const name = 'witchly-app'
   const components = { Header }
-  const links = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' }
-  ]
+  const message = 'Welcome to your new Witchly.js app!'
 
-  return {
-    name,
-    components,
-    get template() {
-      return (
-        <div id="app">
-          <app-header></app-header>
-          <main class="main">
-            <router-view></router-view>
-          </main>
-        </div>
-      )
-    }
+  const template = (vm) => {
+    return (
+      <div id="app">
+        <app-header message={vm.message}></app-header>
+        <router-view></router-view>
+      </div>
+    )
   }
+
+  return { name, components, message, template }
 }
 
 export default App
