@@ -1,6 +1,6 @@
 {
   "name": "witchly-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI service for Witchly.js",
   "main": "index.js",
   "bin": {
@@ -26,5 +26,5 @@
   "engines": {
     "node": "^12.0.0 || >= 14.0.0"
   },
-  "keywords": ["witchly", "cli"]
+  "keywords": ["witchly", "cli", "framework", "front-end"]
 }

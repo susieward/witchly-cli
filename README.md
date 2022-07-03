@@ -1,18 +1,20 @@
 # witchly-cli
 
-A CLI service for [Witchly.js](https://github.com/susieward/witchly-js).
+CLI tooling for [Witchly.js](https://github.com/susieward/witchly-js), a highly-flexible front-end framework.
 
 https://npmjs.com/package/witchly-cli
 
+## Installation
 ```
-npm install witchly-cli
+npm install -g witchly-cli
 ```
 
-Quickly scaffold a new project for local development:
+## Usage
+Quickly scaffold a new project for local development using `witchly create`:
 ```
 witchly create my-app
 ```
 
-### To Do
+### Upcoming
 - Documentation
-- Implement command line options
+- Prompt-based setup options
