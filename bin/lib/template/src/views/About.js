@@ -1,10 +1,9 @@
 
 const About = () => {
   const name = 'about-view'
-  const template = () => {
+  const render = () => {
     return (
-      <div class="content">
-        <h2>About</h2>
+      <app-content title="About">
         <p>
           Enim sit amet venenatis urna cursus eget nunc scelerisque.
           Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum.
@@ -13,10 +12,10 @@ const About = () => {
           Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras.
           Sit amet risus nullam eget felis eget nunc lobortis mattis.
         </p>
-      </div>
+      </app-content>
     )
   }
-  return { name, template }
+  return { name, render }
 }
 
 export default About

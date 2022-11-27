@@ -1,5 +1,4 @@
 
-
 export default class Header {
   name = 'app-header'
   links = [
@@ -11,7 +10,7 @@ export default class Header {
     return ['message']
   }
 
-  get template() {
+  render() {
     return (
       <header id="header">
       <h1>{this.message}</h1>

@@ -24,6 +24,7 @@ async function create(appName) {
     "main": "src/main.js",
     "scripts": {
       "serve": "webpack-dev-server",
+      "build": "webpack --config webpack.config.js --mode production",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
@@ -35,9 +36,9 @@ async function create(appName) {
 
   // TO DO: install some/all based on selected user options
   const deps = [
-    '@babel/core', 'babel-cli', '@babel/preset-react', 'babel-loader',
-    'webpack', 'webpack-cli', 'webpack-dev-server',
-    'html-webpack-plugin', 'css-loader', 'style-loader'
+    '@babel/core', '@babel/preset-react', 'babel-loader',
+    'webpack', 'webpack-cli', 'webpack-dev-server', 'html-webpack-plugin',
+    'css-loader', 'mini-css-extract-plugin', 'css-minimizer-webpack-plugin'
   ]
   const cmd = `${[
     `cd ${root}`,

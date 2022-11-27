@@ -2,7 +2,7 @@
 export default class Home {
   name = 'home-view'
 
-  get template() {
+  render() {
     return (
       <div class="content">
         <h2>Home</h2>
