@@ -1,10 +1,11 @@
 {
   "name": "witchly-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CLI service for Witchly.js",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
   "bin": {
-    "witchly": "index.js"
+    "witchly": "./index.js"
   },
   "files": [
     "bin"
@@ -20,11 +21,17 @@
   },
   "homepage": "https://github.com/susieward/witchly-cli#readme",
   "dependencies": {
+    "@inquirer/prompts": "^3.1.1",
     "commander": "^9.3.0",
     "fs-extra": "^10.1.0"
   },
   "engines": {
-    "node": "^12.0.0 || >= 14.0.0"
+    "node": ">=16"
   },
-  "keywords": ["witchly", "cli", "framework", "front-end"]
+  "keywords": [
+    "witchly",
+    "cli",
+    "framework",
+    "front-end"
+  ]
 }
